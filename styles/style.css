@@ -85,6 +85,60 @@ ul li a{
     display: block;
 }
 .banner-description{
-    font-size: 22px;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.507);
 }
+
+/* plant section style */
+
+.plant-section{
+    text-align: center;
+}
+.plant-section-title{
+    color: var(--primary-color);
+    font-size: 3.2rem;
+    line-height: 2rem;
+}
+.plant-section-description{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
+.plant-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+    text-align: center;
+}
+.p-item-img{
+    width: 270px;
+    height: 322px;
+}
+.p-item-title{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: .5 rem;
+
+}
+.p-item-price{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: -10px;
+
+}
+.btn-primary{
+    font-weight: 600;
+    color: white;
+    display: inline;
+    width: 100%;
+    background-color: #E95A08;
+    border: none;
+    padding: 13px 50px 13px 50px ;
+}
+
+@media screen and (max-width: 576px) {
+    .plant-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
